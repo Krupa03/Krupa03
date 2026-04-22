@@ -38,7 +38,7 @@ Simulates energy grid sensors, ingests streaming data via Python, applies PL/pgS
 | Project | Description | Stack |
 |---|---|---|
 | [SmartGrid Pulse](https://github.com/Krupa03/smartgrid-pulse) | Real-time IoT sensor monitoring | PostgreSQL, TimescaleDB, Python, Tableau |
-| [Uber Supply–Demand Gap Analysis](https://github.com/Krupa03/uber-supply-demand) | Identified 18% unmet demand; driver allocation recommendations | SQL, Python, Excel |
+| [Uber Supply–Demand Gap Analysis]([https://github.com/Krupa03/uber-supply-demand](https://github.com/Krupa03/Uber)) | Identified 18% unmet demand; driver allocation recommendations | SQL, Python, Excel |
 | [Flipkart Customer Support EDA](https://github.com/Krupa03/flipkart-support-eda) | EDA on 20+ attributes — CSAT, response time, agent performance | Python, Tableau |
 | [End-to-End Big Data Pipeline](https://github.com/Krupa03/bigdata-pipeline) | Real-time Kafka–Spark–HDFS pipeline with ML workflows | Kafka, Spark, HDFS |
 | [Fake News Detector](https://github.com/Krupa03/fake-news-detector) | Python ML model — 97% detection accuracy | Python, Scikit-learn |
