@@ -38,6 +38,7 @@ Simulates energy grid sensors, ingests streaming data via Python, applies PL/pgS
 | Project | Description | Stack |
 |---|---|---|
 | [SmartGrid Pulse](https://github.com/Krupa03/smartgrid-pulse) | Real-time IoT sensor monitoring | PostgreSQL, TimescaleDB, Python, Tableau |
+| [Customer Cohort Retention Analysis](https://github.com/Krupa03/cohort-retention-analysis) | Cohort retention analysis on 541,909 transactions — 79.4% Month-1 churn identified, £8.9M revenue insights | Python, Pandas, Tableau |
 | [Uber Supply–Demand Gap Analysis](https://github.com/Krupa03/Uber) | Identified 18% unmet demand; driver allocation recommendations | SQL, Python, Excel |
 | [Flipkart Customer Support EDA](https://github.com/Krupa03/Flipkart_EDA) | EDA on 20+ attributes — CSAT, response time, agent performance | Python, Tableau |
 
