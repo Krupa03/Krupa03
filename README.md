@@ -23,16 +23,6 @@
 
 ---
 
-## 🔨 Currently building
-
-### [SmartGrid Pulse](https://github.com/Krupa03/smartgrid-pulse)
-Real-time IoT sensor monitoring platform using PostgreSQL + TimescaleDB.  
-Simulates energy grid sensors, ingests streaming data via Python, applies PL/pgSQL automation for anomaly detection, and visualises KPIs in Tableau.
-
-> `PostgreSQL` · `TimescaleDB` · `PL/pgSQL` · `Python` · `Tableau`
-
----
-
 ## 📂 Projects
 
 | Project | Description | Stack |
