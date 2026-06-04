@@ -55,4 +55,4 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Krupa%20Parmar-0A66C2?style=flat&logo=linkedin)](https://linkedin.com/in/krupa-parmar-a7996210a)
 [![Email](https://img.shields.io/badge/Email-krupaparmar33@gmail.com-D14836?style=flat&logo=gmail)](mailto:krupaparmar33@gmail.com)
 
-**Open to:** Remote roles · Dubai, UAE · Europe · New Zealand
+**Open to:** Remote roles · Dubai, UAE · Europe
