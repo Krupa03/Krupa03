@@ -7,7 +7,7 @@
 ## 🛠 Tech stack
 
 **Languages & querying**
-`SQL (Advanced)` `Python (Pandas, NumPy)` `R` `PL/pgSQL`
+`SQL (Advanced)` `Python (Pandas, NumPy)` `PL/pgSQL`
 
 **Visualization & BI**
 `Tableau` `Power BI` `Excel` `Matplotlib`
@@ -36,8 +36,8 @@
 
 ## 💼 Experience highlights
 
-- **Data Analyst Intern @ Native Engineering** (Oct–Dec 2025) — Analyzed 200K+ records, built Tableau dashboards, reduced manual processing by 30%
-- **Data Analyst Intern @ Acespritech Solutions** (Dec 2022–Feb 2023) — Led dashboard development in a 5-member analytics team; automated reporting via PowerShell + SharePoint; 95% efficiency in Power BI metadata retrieval
+- **Data Analyst @ Native Engineering** (Oct–Dec 2025) — Analyzed 200K+ records, built Tableau dashboards, reduced manual processing by 30%
+- **Data Analyst @ Acespritech Solutions** (Dec 2022–Feb 2023) — Led dashboard development in a 5-member analytics team; automated reporting via PowerShell + SharePoint; 95% efficiency in Power BI metadata retrieval
 - **Data Entry Operator @ Gateway Group of Companies** (Jan 2021–Jan 2022) — Led 12-member team on large-scale data validation; reduced workload by 75%
 
 ---
