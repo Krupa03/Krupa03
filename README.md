@@ -1,6 +1,7 @@
 # Hi, I'm Krupa 👋
 
-**Data Analyst** based in Ahmedabad, India — skilled in SQL, Python, Power BI, Tableau, and Big Data pipelines. I've worked across analytics internships delivering KPI dashboards, automating reporting workflows, and running end-to-end EDA on large datasets. Currently building a time-series database project to deepen my database engineering skills.
+**Data Analyst** based in Ahmedabad, India — skilled in SQL, Python, Power BI, Tableau, and Big Data pipelines. I've delivered KPI dashboards, automated reporting workflows, and run end-to-end EDA on large datasets across two analytics roles.
+
 
 ---
 
