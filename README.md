@@ -42,10 +42,14 @@ projects: an ELT pipeline (Airflow + dbt + BigQuery), a RAG chatbot
 
 ## 💼 Experience
 
-**Data Analyst Intern — Native Engineering** (Oct–Dec 2025)
+**Data Analyst Intern — Native Engineering** (Oct 2025–Dec 2025)
 Cleaned and transformed customer transaction and support ticket data using 
 Python and SQL. Built Tableau dashboards tracking KPIs for team and manager 
 reporting. Automated recurring reports and documented workflows.
+
+**Customer Service Representative — McDonald's Canada** (Jan 2024–Feb 2025)
+Customer-facing role in Canada. Developed communication, time management, 
+and cross-cultural teamwork skills in a high-volume service environment.
 
 **Data Analyst Intern — Acespritech Solutions** (Dec 2022–Feb 2023)
 Built Tableau and Power BI dashboards for IT operations data. Wrote SQL 
