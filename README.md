@@ -19,7 +19,7 @@ projects: an ELT pipeline (Airflow + dbt + BigQuery), a RAG chatbot
 `Apache Kafka` `PySpark` `dbt` `Airflow` `ETL/ELT` `HDFS` `TimescaleDB`
 
 **Databases**
-`PostgreSQL` `MySQL` `BigQuery` `TimescaleDB`
+`PostgreSQL` `MySQL` `BigQuery`
 
 **Visualisation**
 `Tableau` `Power BI` `Matplotlib` `Grafana`
