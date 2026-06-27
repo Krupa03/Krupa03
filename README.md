@@ -87,6 +87,7 @@ Managed large-scale data entry and validation operations.
 ## 📫 Connect
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Krupa%20Parmar-0A66C2?style=flat&logo=linkedin)](https://linkedin.com/in/krupa-parmar-a7996210a)
+[![Tableau](https://img.shields.io/badge/Tableau-Public-E97627?style=flat&logo=tableau)](https://public.tableau.com/app/profile/krupa.parmar8173)
 [![Email](https://img.shields.io/badge/Email-krupaparmar33@gmail.com-D14836?style=flat&logo=gmail)](mailto:krupaparmar33@gmail.com)
 
 **Open to:** Remote roles (USD/EUR) · Dubai, UAE · Europe · India
