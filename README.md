@@ -1,12 +1,10 @@
 # Hi, I'm Krupa 👋
-**Data Engineer** based in Ahmedabad, India — building data pipelines,
-real-time streaming systems, and analytics infrastructure using Python,
-SQL, Kafka, dbt, and PostgreSQL.
+**Data Engineer** based in Ahmedabad, India — building data pipelines, real-time streaming systems, and analytics infrastructure using Python, SQL, Kafka, dbt, and PostgreSQL.
 
-Portfolio built across four self-directed projects: an ELT pipeline
-(Airflow + dbt + BigQuery), a real-time streaming pipeline
-(Kafka + PySpark + Grafana), a RAG chatbot (LangChain + ChromaDB + Streamlit),
-and a data quality / CI-CD tool (Python + Terraform + AWS).
+Portfolio built across four self-directed projects: an ELT pipeline (Airflow + dbt + BigQuery), a real-time streaming pipeline
+(Kafka + PySpark + Grafana), a RAG chatbot (LangChain + ChromaDB + Streamlit), and a data quality / CI-CD tool (Python + Terraform + AWS).
+
+📍 Eligible for Ireland's Critical Skills Employment Permit (Data Engineering — shortage occupation list). Open to remote (USD/EUR), Dublin, and EU roles.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=postgresql&logoColor=white)
@@ -33,6 +31,9 @@ and a data quality / CI-CD tool (Python + Terraform + AWS).
 **Databases**
 `PostgreSQL` `MySQL` `BigQuery` `TimescaleDB`
 
+**Analytics**
+`cohort and retention analysis` `hypothesis testing` `stakeholder requirements gathering` `dimensional modeling` `data quality management`
+
 **Visualisation**
 `Tableau` `Power BI` `Matplotlib` `Grafana`
 
@@ -58,10 +59,10 @@ and a data quality / CI-CD tool (Python + Terraform + AWS).
 ## 💼 Experience
 
 **Data Analyst Intern — Native Engineering** (Oct 2025–Dec 2025)
-Cleaned and transformed customer transaction and support ticket datasets using Python and SQL — resolving inconsistencies, handling null values, and standardizing formats before loading into reporting layers. Wrote SQL queries (joins, aggregations, filters) to extract customer and financial metrics. Built Tableau dashboards adopted by the team and manager as the primary reporting view. Automated recurring report generation, reducing manual effort in the weekly reporting cycle.
+Gathered stakeholder requirements to define reporting scope and KPI priorities. Cleaned and transformed customer transaction and support ticket datasets using Python and SQL — resolving inconsistencies, handling null values, and standardizing formats before loading into reporting layers. Wrote SQL queries (joins, aggregations, window functions) to extract customer and financial metrics. Built Tableau dashboards adopted by the team and manager as the primary reporting view. Automated recurring report generation, reducing manual effort in the weekly reporting cycle.
 
 **Data Analyst Intern — Acespritech Solutions** (Dec 2022–Feb 2023)
-Built Tableau and Power BI dashboards tracking IT metrics — system performance, ticket volumes, and project tracking — used by the team for regular reporting and review. Wrote SQL queries feeding structured outputs into reporting layers. Used Python for data cleaning and EDA, and PowerShell for data/metadata management.
+Gathered stakeholder requirements from IT operations team to define dashboard KPIs and reporting structure. Built Tableau and Power BI dashboards tracking IT metrics — system performance, ticket volumes, and project tracking — used by the team for regular reporting and review. Wrote SQL queries feeding structured outputs into reporting layers. Used Python for data cleaning and EDA, and PowerShell for data/metadata management.
 
 **Customer Service Representative — McDonald's Canada** (Jan 2024–Feb 2025)
 Relocated to Canada; operated in a fast-paced, multicultural workplace — maintaining consistent transaction accuracy across high-volume POS operations and building cross-cultural communication and async-first habits applicable to distributed teams.
@@ -90,4 +91,3 @@ Managed large-scale data entry and validation operations under strict accuracy s
 [![Email](https://img.shields.io/badge/Email-krupaparmar33@gmail.com-D14836?style=flat&logo=gmail)](mailto:krupaparmar33@gmail.com)
 
 **Open to:** Remote roles (USD/EUR) · Dubai, UAE · Europe (incl. Ireland — Critical Skills Employment Permit eligible) · India
-
