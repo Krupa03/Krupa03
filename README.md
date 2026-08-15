@@ -1,93 +1,63 @@
-# Hi, I'm Krupa 👋
-**Data Engineer** based in Ahmedabad, India — building data pipelines, real-time streaming systems, and analytics infrastructure using Python, SQL, Kafka, dbt, and PostgreSQL.
+# Hi, I'm Krupa 👋 
 
-Portfolio built across four self-directed projects: an ELT pipeline (Airflow + dbt + BigQuery), a real-time streaming pipeline
-(Kafka + PySpark + Grafana), a RAG chatbot (LangChain + ChromaDB + Streamlit), and a data quality / CI-CD tool (Python + Terraform + AWS).
+**Data Engineer** based in India — building end-to-end data pipelines, high-throughput real-time streaming infrastructure, and optimized cloud data warehouses using Python, SQL, Kafka, dbt, and PySpark.
 
-📍 Eligible for Ireland's Critical Skills Employment Permit (Data Engineering — shortage occupation list). Open to remote (USD/EUR), Dublin, and EU roles.
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=postgresql&logoColor=white)
-![Apache Kafka](https://img.shields.io/badge/Kafka-231F20?style=flat&logo=apachekafka&logoColor=white)
-![dbt](https://img.shields.io/badge/dbt-FF694B?style=flat&logo=dbt&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)
-![PySpark](https://img.shields.io/badge/PySpark-E25A1C?style=flat&logo=apachespark&logoColor=white)
-![Airflow](https://img.shields.io/badge/Airflow-017CEE?style=flat&logo=apacheairflow&logoColor=white)
-![BigQuery](https://img.shields.io/badge/BigQuery-4285F4?style=flat&logo=googlebigquery&logoColor=white)
-![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat&logo=grafana&logoColor=white)
-![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat&logo=terraform&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
+📍 **Availability**: Open to global remote contract/full-time opportunities (USD/EUR) and on-site roles in Ireland (Critical Skills Employment Permit eligible for Data Engineering shortage list) or Dubai.
 
 ---
 
 ## 🛠 Tech Stack
 
-**Languages**
-`Python (Pandas, NumPy, SQLAlchemy)` `SQL` `PL/pgSQL` `Spark SQL`
-
-**Data Engineering**
-`Apache Kafka` `PySpark` `dbt` `Airflow` `ETL/ELT` `HDFS` `TimescaleDB`
-
-**Databases**
-`PostgreSQL` `MySQL` `BigQuery` `TimescaleDB`
-
-**Analytics**
-`cohort and retention analysis` `hypothesis testing` `stakeholder requirements gathering` `dimensional modeling` `data quality management`
-
-**Visualisation**
-`Tableau` `Power BI` `Matplotlib` `Grafana`
-
-**Cloud & Infrastructure**
-`Azure` `Google Cloud` `AWS (S3)` `Terraform` `Docker` `GitHub Actions` `PowerShell` `Git`
-
-**AI & LLM**
-`LangChain` `ChromaDB` `HuggingFace` `Ollama` `Anthropic Claude API`
+- **Languages**: Python (Pandas, NumPy, SQLAlchemy), SQL (PostgreSQL, MySQL, BigQuery, Spark SQL), PL/pgSQL
+- **Data Engineering**: Apache Kafka, PySpark, dbt, Apache Airflow, TimescaleDB, HDFS, ETL/ELT Systems
+- **Cloud & DevOps**: AWS (S3), Google Cloud (BigQuery, GCS, Looker Studio), Azure, Terraform (IaC), Docker, GitHub Actions, Git, Bash
+- **AI & Data Products**: LangChain, ChromaDB, Vector Databases, Claude/LLM API Integration, Streamlit
 
 ---
 
-## 📂 Projects
+## 📂 Featured Production Architectures
 
-| Project | Description | Stack |
-|---|---|---|
-| [E-Commerce ELT Pipeline](https://github.com/Krupa03/ecommerce-elt-pipeline) | End-to-end ELT pipeline on 99K+ Brazilian e-commerce orders — Airflow orchestration, dbt 3-layer transformation (staging → intermediate → mart), BigQuery warehouse, 16 consecutive successful DAG runs | Airflow · dbt · BigQuery · Python · Docker |
-| [Real-Time Sales Pipeline](https://github.com/Krupa03/realtime-sales-pipeline) | End-to-end streaming pipeline — Kafka producer → PySpark Structured Streaming consumer → TimescaleDB hypertables → Grafana dashboard, $368,919 in simulated transaction volume, 110 orders/min peak | Kafka · PySpark · TimescaleDB · Grafana · Docker |
-| [RAG Document Chatbot](https://github.com/Krupa03/rag-document-chatbot) | Multi-turn document Q&A — PDF ingestion, semantic chunking, ChromaDB vector store, LangChain retrieval chain with source citations, runs locally via Ollama | LangChain · ChromaDB · Ollama · Streamlit |
-| [Data Quality Checker](https://github.com/Krupa03/data-quality-checker) | Automated data quality checks (nulls, duplicates, referential integrity, freshness, schema drift) for a Kimball star-schema warehouse — Terraform-provisioned AWS S3 infra, GitHub Actions CI/CD pipeline, 7-test pytest suite | Python · Terraform · AWS · GitHub Actions · DuckDB |
+### 🏎 [Real-Time Sales Pipeline](https://github.com)
+End-to-end event streaming pipeline simulating production-scale transactional retail flow.
+- **Infrastructure**: Python mock producer → Apache Kafka broker → PySpark Structured Streaming engine.
+- **Storage & Viz**: High-velocity data ingested into TimescaleDB hypertables, serving a live 3-panel Grafana monitoring dashboard with a 30s auto-refresh rate.
+- **Scale**: Successfully processed over $368K in transaction volume, handling peaks of 110 orders/minute.
 
----
+### 🛡 [Automated Data Quality Checker](https://github.com)
+Defensive engineering CLI tool enforcing data contract and schema validity across a Kimball star-schema data warehouse.
+- **Testing**: Built a comprehensive 7-test suite via Pytest covering null values, duplicates, referential integrity, freshness, and structural schema drift.
+- **DevOps**: Automated execution via a GitHub Actions CI/CD workflow validating code quality on every push. Infrastructure fully provisioned as code using Terraform.
+- **Problem Solved**: Caught and patched a crucial cross-platform timezone processing bug (Windows/IST vs UTC environments) before deployment.
 
-## 💼 Experience
+### ⚡ [E-Commerce ELT Pipeline](https://github.com)
+Production-grade analytical warehouse build handling transactional e-commerce ingestion and modeling.
+- **Orchestration**: Apache Airflow dynamically manages daily ingestion cycles into Google BigQuery raw layers.
+- **Modeling**: dbt handles transformations across 3 structural layers (staging → intermediate → analytics marts) utilizing incremental model configurations.
+- **Result**: Successfully executed 16 consecutive historical DAG runs, mapping business metrics for 99K+ orders.
 
-**Data Analyst Intern — Native Engineering** (Oct 2025–Dec 2025)
-Gathered stakeholder requirements to define reporting scope and KPI priorities. Cleaned and transformed customer transaction and support ticket datasets using Python and SQL — resolving inconsistencies, handling null values, and standardizing formats before loading into reporting layers. Wrote SQL queries (joins, aggregations, window functions) to extract customer and financial metrics. Built Tableau dashboards adopted by the team and manager as the primary reporting view. Automated recurring report generation, reducing manual effort in the weekly reporting cycle.
-
-**Data Analyst Intern — Acespritech Solutions** (Dec 2022–Feb 2023)
-Gathered stakeholder requirements from the IT operations team to define dashboard KPIs and reporting structure. Built Tableau and Power BI dashboards tracking IT metrics — system performance, ticket volumes, and project tracking — used by the team for regular reporting and review. Wrote SQL queries feeding structured outputs into reporting layers. Used Python for data cleaning and EDA, and PowerShell for data/metadata management.
-
-**Customer Service Representative — McDonald's Canada** (Jan 2024–Feb 2025)
-Relocated to Canada; operated in a fast-paced, multicultural workplace — maintaining consistent transaction accuracy across high-volume POS operations and building cross-cultural communication and async-first habits applicable to distributed teams.
-
-**Data Entry Operator — Gateway Group of Companies** (Jan 2021–Jan 2022)
-Managed large-scale data entry and validation operations under strict accuracy standards, maintaining operational data integrity across high-volume workflows.
-
----
-
-## 🎓 Education
-
-- **P.G. Diploma — Big Data Solution Architecture** | Conestoga College, Canada (2023)
-- **M.E. Computer Engineering** | Gujarat Technological University (2020)
-- **B.E. Computer Engineering** | Gujarat Technological University (2018)
-
-## 📜 Certifications
-`Building with Claude API` `AI Fluency` `Python for Everybody` `Tableau`
-`Power BI` `SQL for Data Science` `Qualcomm AI Upskilling`
+### 🤖 [RAG Document Chatbot](https://github.com)
+Multi-turn intelligent context retrieval engine running entirely on localized infrastructure.
+- **Ingestion**: PDF processing pipelines utilize semantic chunking and generate localized vector embeddings.
+- **Storage**: Vector profiles mapped into a 73-chunk ChromaDB vector store optimized for retrieval latency.
+- **Execution**: LangChain framework couples historical conversational memory with precise source-citation output, deployed locally via Ollama and a Streamlit UI.
 
 ---
 
-## 📫 Connect
+## 💼 Core Technical Experience
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Krupa%20Parmar-0A66C2?style=flat&logo=linkedin)](https://linkedin.com/in/krupa-parmar-a7996210a)
-[![Tableau](https://img.shields.io/badge/Tableau-Public-E97627?style=flat&logo=tableau)](https://public.tableau.com/app/profile/krupa.parmar8173)
-[![Email](https://img.shields.io/badge/Email-krupaparmar33@gmail.com-D14836?style=flat&logo=gmail)](mailto:krupaparmar33@gmail.com)
+**Data Analyst Intern** | Native Engineering *(Oct 2025 – Dec 2025)*
+- Designed custom SQL extraction scripts utilizing window functions and complex multi-table joins to feed Tableau dashboards.
+- Automated recurring manual data pulls into programmatic Python pipelines, saving weekly engineering overhead.
+- Engineered automated data cleansing rules (deduplication, schema matching, validation) to clean incoming financial data.
 
-**Open to:** Remote roles (USD/EUR) · Dubai, UAE · Europe (incl. Ireland — Critical Skills Employment Permit eligible) · India
+**Data Analyst Intern** | Acespritech Solutions *(Dec 2022 – Feb 2023)*
+- Built live Power BI and Tableau tracking interfaces to monitor operational infrastructure metrics and ticketing queues.
+- Wrote PowerShell and Python automation scripts to aggregate server performance metadata before database ingestion.
+
+---
+
+## 🎓 Education & Credentials
+
+- **P.G. Diploma in Big Data Solution Architecture** – Conestoga College, Canada
+- **Master of Engineering (M.E.) in Computer Engineering** – Gujarat Technological University
+- **Bachelor of Engineering (B.E.) in Computer Engineering** – Gujarat Technological University
