@@ -17,25 +17,25 @@
 
 ## 📂 Featured Production Architectures
 
-### 🏎 [Real-Time Sales Pipeline](https://github.com)
+### 🏎 [Real-Time Sales Pipeline](https://github.com/Krupa03/realtime-sales-pipeline)
 End-to-end event streaming pipeline simulating production-scale transactional retail flow.
 - **Infrastructure**: Python mock producer → Apache Kafka broker → PySpark Structured Streaming engine.
 - **Storage & Viz**: High-velocity data ingested into TimescaleDB hypertables, serving a live 3-panel Grafana monitoring dashboard with a 30s auto-refresh rate.
 - **Scale**: Successfully processed over $368K in transaction volume, handling peaks of 110 orders/minute.
 
-### 🛡 [Automated Data Quality Checker](https://github.com)
+### 🛡 [Automated Data Quality Checker](https://github.com/Krupa03/data-quality-checker)
 Defensive engineering CLI tool enforcing data contract and schema validity across a Kimball star-schema data warehouse.
 - **Testing**: Built a comprehensive 7-test suite via Pytest covering null values, duplicates, referential integrity, freshness, and structural schema drift.
 - **DevOps**: Automated execution via a GitHub Actions CI/CD workflow validating code quality on every push. Infrastructure fully provisioned as code using Terraform.
 - **Problem Solved**: Caught and patched a crucial cross-platform timezone processing bug (Windows/IST vs UTC environments) before deployment.
 
-### ⚡ [E-Commerce ELT Pipeline](https://github.com)
+### ⚡ [E-Commerce ELT Pipeline](https://github.com/Krupa03/ecommerce-elt-pipeline)
 Production-grade analytical warehouse build handling transactional e-commerce ingestion and modeling.
 - **Orchestration**: Apache Airflow dynamically manages daily ingestion cycles into Google BigQuery raw layers.
 - **Modeling**: dbt handles transformations across 3 structural layers (staging → intermediate → analytics marts) utilizing incremental model configurations.
 - **Result**: Successfully executed 16 consecutive historical DAG runs, mapping business metrics for 99K+ orders.
 
-### 🤖 [RAG Document Chatbot](https://github.com)
+### 🤖 [RAG Document Chatbot](https://github.com/Krupa03/rag-document-chatbot)
 Multi-turn intelligent context retrieval engine running entirely on localized infrastructure.
 - **Ingestion**: PDF processing pipelines utilize semantic chunking and generate localized vector embeddings.
 - **Storage**: Vector profiles mapped into a 73-chunk ChromaDB vector store optimized for retrieval latency.
