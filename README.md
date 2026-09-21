@@ -1,4 +1,4 @@
-# Hi, I'm Krupa 👋
+# Hello, I'm Krupa 👋
 
 Data Engineer and Analytics Engineer based in India — building end-to-end ELT pipelines, Lakehouse architectures, and real-time streaming systems using Python, SQL, dbt, Airflow, Kafka, PySpark, and Databricks.
 
