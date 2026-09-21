@@ -1,63 +1,122 @@
-# Hi, I'm Krupa 👋 
+# Hi, I'm Krupa 👋
 
-**Data Engineer** based in India — building end-to-end data pipelines, high-throughput real-time streaming infrastructure, and optimized cloud data warehouses using Python, SQL, Kafka, dbt, and PySpark.
+Data Engineer and Analytics Engineer based in India — building end-to-end ELT pipelines, Lakehouse architectures, and real-time streaming systems using Python, SQL, dbt, Airflow, Kafka, PySpark, and Databricks.
 
-📍 **Availability**: Open to global remote contract/full-time opportunities (USD/EUR) and on-site roles in Ireland (Critical Skills Employment Permit eligible for Data Engineering shortage list) or Dubai.
+📍 **Availability:** Open to sponsored relocation (Ireland CSEP · EU Blue Card eligible — IT shortage occupation) and global remote roles (USD/EUR). Target markets: Ireland · Poland · Germany · Austria · Remote.
 
 ---
 
 ## 🛠 Tech Stack
 
-- **Languages**: Python (Pandas, NumPy, SQLAlchemy), SQL (PostgreSQL, MySQL, BigQuery, Spark SQL), PL/pgSQL
-- **Data Engineering**: Apache Kafka, PySpark, dbt, Apache Airflow, TimescaleDB, HDFS, ETL/ELT Systems
-- **Cloud & DevOps**: AWS (S3), Google Cloud (BigQuery, GCS, Looker Studio), Azure, Terraform (IaC), Docker, GitHub Actions, Git, Bash
-- **AI & Data Products**: LangChain, ChromaDB, Vector Databases, Claude/LLM API Integration, Streamlit
+| Category | Tools |
+|---|---|
+| **Data Engineering** | Apache Airflow · Apache Kafka · PySpark · dbt · Spark SQL · ETL/ELT |
+| **Cloud & Lakehouse** | Databricks (Unity Catalog · Serverless · Workflows) · Delta Lake · Google Cloud (BigQuery, GCS) · AWS (S3) · Azure (ADF, ADLS) |
+| **Languages** | Python (Pandas, NumPy, SQLAlchemy) · SQL (PostgreSQL, MySQL, BigQuery, Spark SQL) · PL/pgSQL |
+| **IaC & DevOps** | Terraform · Docker · GitHub Actions CI/CD · Git |
+| **Warehouses** | BigQuery · Snowflake · PostgreSQL · TimescaleDB |
+| **Visualisation** | Tableau · Power BI · Grafana · Looker Studio |
+| **AI & Data Products** | LangChain · ChromaDB · Streamlit · Claude/LLM API |
 
 ---
 
-## 📂 Featured Production Architectures
+## 📂 Production Projects
 
-### 🏎 [Real-Time Sales Pipeline](https://github.com/Krupa03/realtime-sales-pipeline)
-End-to-end event streaming pipeline simulating production-scale transactional retail flow.
-- **Infrastructure**: Python mock producer → Apache Kafka broker → PySpark Structured Streaming engine.
-- **Storage & Viz**: High-velocity data ingested into TimescaleDB hypertables, serving a live 3-panel Grafana monitoring dashboard with a 30s auto-refresh rate.
-- **Scale**: Successfully processed over $368K in transaction volume, handling peaks of 110 orders/minute.
+### 🏦 [Fintech ELT Pipeline](https://github.com/Krupa03/fintech-elt-pipeline)
+**Databricks Serverless · Delta Lake · Unity Catalog · PySpark · dbt · Python · SQL**
 
-### 🛡 [Automated Data Quality Checker](https://github.com/Krupa03/data-quality-checker)
-Defensive engineering CLI tool enforcing data contract and schema validity across a Kimball star-schema data warehouse.
-- **Testing**: Built a comprehensive 7-test suite via Pytest covering null values, duplicates, referential integrity, freshness, and structural schema drift.
-- **DevOps**: Automated execution via a GitHub Actions CI/CD workflow validating code quality on every push. Infrastructure fully provisioned as code using Terraform.
-- **Problem Solved**: Caught and patched a crucial cross-platform timezone processing bug (Windows/IST vs UTC environments) before deployment.
+End-to-end fraud-detection ELT pipeline on the IEEE-CIS dataset (590K+ transactions).
+
+- PySpark ingests raw CSVs into Delta Lake raw tables via Unity Catalog Volume
+- dbt runs 5 models across staging → intermediate → mart layers surfacing daily fraud rates, risk-scored transactions, and multi-factor fraud signals
+- 6 dbt tests enforcing uniqueness, not-null, and accepted value constraints
+- Databricks Workflow orchestrates the full pipeline — 2 dependency-chained tasks, **4m 26s end-to-end**
+
+---
 
 ### ⚡ [E-Commerce ELT Pipeline](https://github.com/Krupa03/ecommerce-elt-pipeline)
-Production-grade analytical warehouse build handling transactional e-commerce ingestion and modeling.
-- **Orchestration**: Apache Airflow dynamically manages daily ingestion cycles into Google BigQuery raw layers.
-- **Modeling**: dbt handles transformations across 3 structural layers (staging → intermediate → analytics marts) utilizing incremental model configurations.
-- **Result**: Successfully executed 16 consecutive historical DAG runs, mapping business metrics for 99K+ orders.
+**Airflow · dbt · BigQuery · Docker**
+
+Production-grade analytical warehouse on 99.4K Brazilian Olist orders.
+
+- Airflow 2.8.1 orchestrates daily ingestion into BigQuery raw layer
+- dbt transforms across staging → intermediate → mart layers surfacing **R$16.4M in customer LTV**
+- Incremental models, schema tests, full data lineage documentation
+- **16 consecutive successful DAG runs**, each completing under 6 minutes
+
+---
+
+### 🚀 [Real-Time Sales Pipeline](https://github.com/Krupa03/realtime-sales-pipeline)
+**Kafka · PySpark · TimescaleDB · Grafana · Docker Compose**
+
+End-to-end real-time streaming pipeline simulating production-scale event flow.
+
+- Python/Faker producer → Kafka → PySpark Structured Streaming → TimescaleDB hypertables
+- Live 3-panel Grafana dashboard with 30s auto-refresh
+- **$368,919 simulated transaction volume** peaking at **110 orders/minute**
+- Full stack containerised via Docker Compose
+
+---
+
+### 🏗 [Lakehouse & Streaming Architecture](https://github.com/Krupa03/data-engineering-15-day-sprint)
+**Databricks · Delta Lake · Snowflake · PySpark · Kafka · dbt**
+
+Lakehouse and streaming architecture study covering production patterns.
+
+- Bronze/Silver/Gold Medallion architecture on Databricks — Auto Loader, MERGE upserts, Time Travel
+- Snowflake pipeline: virtual warehouses, Snowpipe, Streams & Tasks for CDC, zero-copy cloning for dev/prod isolation
+- Kafka + Spark Structured Streaming integration
+- All patterns documented across 15 committed modules
+
+---
+
+### 🛡 [Data Quality CLI Tool](https://github.com/Krupa03/data-quality-checker)
+**Python · AWS S3 · Terraform · GitHub Actions · DuckDB · pytest**
+
+Defensive engineering CLI enforcing data contracts across a Kimball star-schema warehouse.
+
+- Automated checks for nulls, duplicates, referential integrity, freshness, and schema drift
+- Terraform provisions AWS S3 infrastructure as code (tested against LocalStack)
+- GitHub Actions CI/CD runs lint, pytest suite (7 tests, all passing), and terraform validate on every push
+- Caught and fixed a cross-platform timezone bug in freshness-check logic — verified on UTC sandbox and live IST machine
+
+---
 
 ### 🤖 [RAG Document Chatbot](https://github.com/Krupa03/rag-document-chatbot)
-Multi-turn intelligent context retrieval engine running entirely on localized infrastructure.
-- **Ingestion**: PDF processing pipelines utilize semantic chunking and generate localized vector embeddings.
-- **Storage**: Vector profiles mapped into a 73-chunk ChromaDB vector store optimized for retrieval latency.
-- **Execution**: LangChain framework couples historical conversational memory with precise source-citation output, deployed locally via Ollama and a Streamlit UI.
+**LangChain · ChromaDB · Ollama · HuggingFace · Streamlit**
+
+Fully local multi-turn document Q&A system.
+
+- PDF ingestion → 500-token semantic chunking → 73 chunks in ChromaDB vector store
+- LangChain retrieval chain (top-3 chunks per query) with source citations and multi-turn memory
+- Streamlit UI with configurable parameters, runs via Ollama — zero external API dependency
+- Sub-2-second response time across 50+ page documents
 
 ---
 
-## 💼 Core Technical Experience
+## 💼 Experience
 
-**Data Analyst Intern** | Native Engineering *(Oct 2025 – Dec 2025)*
-- Designed custom SQL extraction scripts utilizing window functions and complex multi-table joins to feed Tableau dashboards.
-- Automated recurring manual data pulls into programmatic Python pipelines, saving weekly engineering overhead.
-- Engineered automated data cleansing rules (deduplication, schema matching, validation) to clean incoming financial data.
+**Data Analyst Intern | Native Engineering** *(Oct 2025 – Dec 2025)*
+- Gathered reporting requirements from managers and business analysts, translating business needs into SQL extraction logic and Tableau dashboard outputs
+- Defined data quality standards and cleaning rules — deduplication, null handling, ID reconciliation using Python (Pandas) and SQL
+- Automated the weekly reporting cycle with Python post-processing, replacing 3+ hours of manual work per week
 
-**Data Analyst Intern** | Acespritech Solutions *(Dec 2022 – Feb 2023)*
-- Built live Power BI and Tableau tracking interfaces to monitor operational infrastructure metrics and ticketing queues.
-- Wrote PowerShell and Python automation scripts to aggregate server performance metadata before database ingestion.
+**Data Analyst Intern | Acespritech Solutions Pvt Ltd** *(Dec 2022 – Feb 2023)*
+- Liaised with operations and finance stakeholders to gather KPI requirements, delivering 3 Power BI and Tableau dashboards reviewed weekly by the team
+- Extracted and transformed data from 4 relational source tables using SQL — mapped raw IT operations data to structured reporting schemas
 
 ---
 
-## 🎓 Education & Credentials
+## 🎓 Education
 
-- **P.G. Diploma in Big Data Solution Architecture** – Conestoga College, Canada
-- **Master of Engineering (M.E.) in Computer Engineering** – Gujarat Technological University
-- **Bachelor of Engineering (B.E.) in Computer Engineering** – Gujarat Technological University
+- **Post-Graduate Diploma** in Big Data Solution Architecture — Conestoga College, Canada (2023) · GPA 3.75
+- **Master of Engineering** in Computer Engineering — Gujarat Technological University (2020)
+- **Bachelor of Engineering** in Computer Engineering — Gujarat Technological University (2018)
+
+---
+
+## 📫 Connect
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Krupa%20Parmar-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/krupa-parmar-a7996210a/)
+
+Open to Data Engineer and Analytics Engineer roles — Ireland (CSEP) · Poland · Germany · Austria · Remote (USD/EUR). DMs open.
